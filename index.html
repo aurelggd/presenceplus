@@ -6,514 +6,609 @@
     <title>PrésencePlus | Aide à domicile à Vernouillet</title>
     <meta
       name="description"
-      content="PrésencePlus accompagne les familles de Vernouillet et alentours avec des services d'aide à domicile humains, fiables et flexibles."
+      content="PrésencePlus accompagne les familles de Vernouillet et alentours avec des services d'aide à domicile humains, fiables et flexibles. Crédit d'impôt 50 % intégré."
     />
+    <meta name="theme-color" content="#19252D" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Space+Grotesk:wght@500&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="offer-banner">
-      🎉 Offre de bienvenue : -10 % sur votre première prestation
-    </div>
-    <div class="info-bar">
-      <span>📍 Vernouillet & alentours</span>
-      <span>📞 07 75 70 93 35</span>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <a class="skip-link" href="#accueil">Aller au contenu</a>
+
+    <!-- Barre utilitaire -->
+    <div class="topbar">
+      <div class="container-x topbar-inner">
+        <span class="topbar-offer">🎉 Offre de bienvenue : −10 % sur votre première prestation</span>
+        <span class="topbar-sep" aria-hidden="true"></span>
+        <span>📍 Vernouillet &amp; alentours</span>
+        <span class="topbar-sep" aria-hidden="true"></span>
+        <a href="tel:+33630146306">📞 06 30 14 63 06</a>
+      </div>
     </div>
 
-    <header class="site-header">
-      <nav class="navbar">
-        <a class="logo" href="#accueil">
-          <img src="assets/logo.png" alt="Logo PrésencePlus" />
-          <span>PrésencePlus</span>
-        </a>
-        <button class="nav-toggle" aria-label="Ouvrir le menu">
-          ☰
-        </button>
-        <ul class="nav-links">
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#simulateur">Simulateur</a></li>
-          <li><a href="#avis">Avis</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-          <a class="btn primary" href="#contact">Devis gratuit</a>
-        </div>
-      </nav>
+    <!-- Navbar -->
+    <header class="site-header" id="siteHeader">
+      <div class="container-x">
+        <nav class="navbar" aria-label="Navigation principale">
+          <a class="logo" href="#accueil">
+            <img src="assets/logo.png" alt="" aria-hidden="true" />
+            <span class="logo-text"><span class="logo-name">Présence</span><span class="logo-accent">Plus</span></span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#fonctionnement">Fonctionnement</a></li>
+            <li><a href="#simulateur">Simulateur</a></li>
+            <li><a href="#avis">Avis</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="nav-cta">
+              <a class="btn btn-accent" href="#contact"><span>Devis gratuit</span></a>
+            </li>
+          </ul>
+          <div class="nav-actions">
+            <a class="btn btn-accent" href="#contact"><span>Devis gratuit</span></a>
+            <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+              <span class="burger" aria-hidden="true"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-backdrop" aria-hidden="true"></div>
     </header>
 
-    <main>
-      <section id="accueil" class="hero section">
-        <div class="hero-content">
-          <p class="eyebrow">Aide à domicile premium</p>
-          <h1>Aide à domicile à Vernouillet & environs</h1>
-          <p class="subtitle">La présence qui simplifie votre quotidien.</p>
-          <p class="hero-text">
-            PrésencePlus propose des prestations fiables, humaines et flexibles :
-            entretien, jardinage, bricolage, garde d'enfants et soutien scolaire.
+    <main id="main">
+      <!-- Héros -->
+      <section id="accueil" class="hero on-dark">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2070&q=80"
+            alt=""
+            data-hero-img
+          />
+        </div>
+        <div class="hero-scrim-bottom" aria-hidden="true"></div>
+        <div class="hero-scrim-left" aria-hidden="true"></div>
+        <div class="hero-scrim-top" aria-hidden="true"></div>
+
+        <div class="container-x hero-inner">
+          <p class="eyebrow" data-hero-el>Aide à domicile premium · Vernouillet</p>
+          <h1 data-hero-el>
+            La présence qui simplifie
+            <span class="display-serif">votre quotidien.</span>
+          </h1>
+          <p class="hero-subtitle" data-hero-el>
+            Des prestations fiables, humaines et flexibles, près de chez vous.
           </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#simulateur">Simuler mon devis</a>
-            <a class="btn secondary" href="#services">Découvrir les services</a>
+          <p class="hero-text" data-hero-el>
+            Entretien, jardinage, bricolage, garde d'enfants et soutien scolaire —
+            avec un interlocuteur dédié et 50 % de crédit d'impôt.
+          </p>
+          <div class="hero-actions" data-hero-el>
+            <a class="btn btn-accent btn-lg" href="#simulateur" data-magnetic>
+              <span>Simuler mon devis</span>
+            </a>
+            <a class="btn btn-outline btn-lg" href="#services">
+              <span>Découvrir les services</span>
+            </a>
           </div>
-          <div class="badges">
-            <span>⏱️ Réponse en 24h ouvrées</span>
+          <div class="hero-badges" data-hero-el>
+            <span><span class="status-dot" aria-hidden="true"></span> Réponse en 24h ouvrées</span>
             <span>✅ Intervenants vérifiés</span>
-            <span>💡 50 % de crédit d’impôt</span>
-          </div>
-        </div>
-        <div class="hero-card">
-          <h3>Un accompagnement humain</h3>
-          <p>
-            Interlocuteur dédié, suivi régulier et flexibilité totale pour
-            s'adapter à votre rythme.
-          </p>
-          <ul class="checklist">
-            <li>Équipe locale et engagée</li>
-            <li>Tarifs transparents</li>
-            <li>Crédit d'impôt immédiat</li>
-          </ul>
-          <a class="btn secondary" href="#contact">Parler à un conseiller</a>
-        </div>
-      </section>
-
-      <section class="stats section reveal">
-        <div class="stat-card">
-          <h3>+120</h3>
-          <p>familles accompagnées</p>
-        </div>
-        <div class="stat-card">
-          <h3>24h</h3>
-          <p>réponse moyenne</p>
-        </div>
-        <div class="stat-card">
-          <h3>50 %</h3>
-          <p>crédit d’impôt</p>
-        </div>
-        <div class="stat-card">
-          <h3>4,9/5</h3>
-          <p>satisfaction moyenne</p>
-        </div>
-      </section>
-
-      <section id="pourquoi" class="section reveal">
-        <div class="section-header">
-          <h2>Pourquoi PrésencePlus</h2>
-          <p>
-            Une équipe locale engagée pour créer une relation de confiance et
-            un quotidien plus simple.
-          </p>
-        </div>
-        <div class="features-grid">
-          <div class="feature-card">
-            <p><strong>Interlocuteur dédié</strong> – Un conseiller unique qui connaît votre dossier et vos besoins.</p>
-          </div>
-          <div class="feature-card">
-            <p><strong>Flexibilité totale</strong> – Prestations ponctuelles ou régulières selon votre agenda.</p>
-          </div>
-          <div class="feature-card">
-            <p><strong>Qualité contrôlée</strong> – Intervenants sélectionnés, formés et évalués régulièrement.</p>
-          </div>
-          <div class="feature-card">
-            <p><strong>Transparence des tarifs</strong> – Prix clairs, devis détaillés et crédit d'impôt intégré.</p>
-          </div>
-          <div class="feature-card">
-            <p><strong>Accompagnement humain</strong> – Écoute, bienveillance et suivi personnalisé.</p>
+            <span>💡 50 % de crédit d'impôt</span>
           </div>
         </div>
       </section>
 
-      <section id="services" class="section reveal">
-        <div class="section-header">
-          <h2>Nos services</h2>
-          <p>Des prestations complètes pour la maison, la famille et le soutien.</p>
-        </div>
-        <div class="filters" role="tablist">
-          <button class="filter-btn active" data-filter="all">Tous</button>
-          <button class="filter-btn" data-filter="maison">Maison</button>
-          <button class="filter-btn" data-filter="jardin">Jardin</button>
-          <button class="filter-btn" data-filter="famille">Famille</button>
-          <button class="filter-btn" data-filter="soutien">Soutien</button>
-        </div>
-        <div class="services-grid">
-          <article class="service-card" data-category="maison">
-            <div class="icon">🧼</div>
-            <h3>Entretien de la maison</h3>
-            <p>Ménage, rangement, entretien des surfaces et textiles.</p>
-            <span class="price">À partir de 26 €/h</span>
-          </article>
-          <article class="service-card" data-category="jardin">
-            <div class="icon">🌿</div>
-            <h3>Jardinage</h3>
-            <p>Tonte, taille, entretien des extérieurs et plantations.</p>
-            <span class="price">À partir de 28 €/h</span>
-          </article>
-          <article class="service-card" data-category="maison">
-            <div class="icon">🔧</div>
-            <h3>Petit bricolage</h3>
-            <p>Montage, petites réparations et ajustements du quotidien.</p>
-            <span class="price">À partir de 30 €/h</span>
-          </article>
-          <article class="service-card" data-category="famille">
-            <div class="icon">🧒</div>
-            <h3>Garde d'enfants (3+ ans)</h3>
-            <p>Sorties d'école, activités, repas et routines du soir.</p>
-            <span class="price">À partir de 32 €/h</span>
-          </article>
-          <article class="service-card" data-category="soutien">
-            <div class="icon">📚</div>
-            <h3>Soutien scolaire</h3>
-            <p>Accompagnement pédagogique et aide aux devoirs.</p>
-            <span class="price">À partir de 34 €/h</span>
-          </article>
-          <article class="service-card" data-category="maison">
-            <div class="icon">🛒</div>
-            <h3>Courses & repas</h3>
-            <p>Aide aux courses, préparation de repas simples et équilibrés.</p>
-            <span class="price">À partir de 24 €/h</span>
-          </article>
-        </div>
-      </section>
-
-      <section id="fonctionnement" class="section reveal">
-        <div class="section-header">
-          <h2>Notre fonctionnement</h2>
-          <p>Un parcours simple et clair pour un service sur mesure.</p>
-        </div>
-        <div class="process">
-          <div class="process-step">
-            <span class="step-number">1</span>
-            <div>
-              <h4>Échange</h4>
-              <p>Analyse des besoins et conseils personnalisés.</p>
+      <!-- Statistiques -->
+      <section class="stats" aria-label="Chiffres clés">
+        <div class="container-x">
+          <div class="stats-inner reveal">
+            <div class="stat">
+              <div class="stat-value">+120</div>
+              <div class="stat-label">familles accompagnées</div>
             </div>
-          </div>
-          <div class="process-step">
-            <span class="step-number">2</span>
-            <div>
-              <h4>Proposition</h4>
-              <p>Devis clair avec crédit d’impôt intégré.</p>
+            <div class="stat">
+              <div class="stat-value">24h</div>
+              <div class="stat-label">réponse moyenne</div>
             </div>
-          </div>
-          <div class="process-step">
-            <span class="step-number">3</span>
-            <div>
-              <h4>Intervention</h4>
-              <p>Prestation ponctuelle ou régulière.</p>
+            <div class="stat">
+              <div class="stat-value">50 %</div>
+              <div class="stat-label">crédit d'impôt</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">4,9/5</div>
+              <div class="stat-label">satisfaction moyenne</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="simulateur" class="section reveal simulator">
-        <div class="section-header">
-          <h2>Simulateur de budget</h2>
-          <p>Obtenez une estimation rapide et transparente.</p>
-        </div>
-        <div class="simulator-grid">
-          <form id="simulatorForm" class="card">
-            <label>
-              Service
-              <select name="service" id="simService" required>
-                <option value="entretien">Entretien de la maison</option>
-                <option value="jardinage">Jardinage</option>
-                <option value="bricolage">Petit bricolage</option>
-                <option value="garde">Garde d'enfants</option>
-                <option value="soutien">Soutien scolaire</option>
-                <option value="courses">Courses & repas</option>
-              </select>
-            </label>
-            <label>
-              Nombre d’heures / mois
-              <input
-                type="number"
-                id="simHours"
-                min="1"
-                max="200"
-                value="10"
-                required
-              />
-            </label>
-            <label>
-              Fréquence
-              <select name="frequency" id="simFrequency">
-                <option value="ponctuelle">Ponctuelle</option>
-                <option value="reguliere">Régulière</option>
-              </select>
-            </label>
-            <button class="btn primary" type="submit">Recevoir un devis</button>
-            <p class="hint">
-              Estimation indicative. Un devis personnalisé est envoyé sous 24h.
-            </p>
-          </form>
-          <div class="card summary">
-            <h3>Estimation</h3>
-            <div class="summary-line">
-              <span>Coût brut estimé</span>
-              <strong id="simBrut">-</strong>
-            </div>
-            <div class="summary-line">
-              <span>Crédit d’impôt (50 %)</span>
-              <strong id="simCredit">-</strong>
-            </div>
-            <div class="summary-line total">
-              <span>Coût réel</span>
-              <strong id="simNet">-</strong>
-            </div>
-            <p class="note">
-              Nous vous rappelons pour affiner les besoins et valider les
-              disponibilités.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="disponibilites" class="section reveal">
-        <div class="section-header">
-          <h2>Disponibilités</h2>
-          <p>Sélectionnez vos créneaux préférés.</p>
-        </div>
-        <div class="availability card">
-          <div class="availability-group">
-            <h4>Créneaux</h4>
-            <label><input type="checkbox" value="Matin" /> Matin</label>
-            <label><input type="checkbox" value="Après-midi" /> Après-midi</label>
-            <label><input type="checkbox" value="Soir" /> Soir</label>
-            <label><input type="checkbox" value="Week-end" /> Week-end</label>
-          </div>
-          <div class="availability-group">
-            <h4>Jours</h4>
-            <label><input type="checkbox" value="Lundi" /> Lundi</label>
-            <label><input type="checkbox" value="Mardi" /> Mardi</label>
-            <label><input type="checkbox" value="Mercredi" /> Mercredi</label>
-            <label><input type="checkbox" value="Jeudi" /> Jeudi</label>
-            <label><input type="checkbox" value="Vendredi" /> Vendredi</label>
-            <label><input type="checkbox" value="Samedi" /> Samedi</label>
-            <label><input type="checkbox" value="Dimanche" /> Dimanche</label>
-          </div>
-          <p class="note">
-            Nous confirmerons la disponibilité exacte lors de l’appel.
+      <!-- Manifeste -->
+      <section class="section manifesto">
+        <div class="container-x">
+          <p class="eyebrow reveal">Notre engagement</p>
+          <h2 class="manifesto-headline">
+            De la première écoute à
+            <span class="display-serif" style="color: var(--accent)">un quotidien plus léger.</span>
+          </h2>
+          <p class="manifesto-foot reveal">
+            PrésencePlus, c'est une équipe locale qui prend le temps de comprendre
+            votre rythme et vos besoins — pour créer une relation de confiance,
+            durable et profondément humaine.
           </p>
         </div>
       </section>
 
-      <section id="avis" class="section reveal testimonials">
-        <div class="section-header">
-          <h2>Avis clients</h2>
-          <p>Des familles locales qui nous font confiance.</p>
-        </div>
-        <div class="testimonial-slider card">
-          <button class="slider-btn" id="prevTestimonial" aria-label="Précédent">
-            ‹
-          </button>
-          <div class="testimonial-content">
-            <p id="testimonialText"></p>
-            <span id="testimonialAuthor"></span>
+      <!-- Pourquoi -->
+      <section id="pourquoi" class="section">
+        <div class="container-x">
+          <div class="section-header reveal">
+            <p class="eyebrow">Pourquoi nous</p>
+            <h2>Une présence pensée pour <span class="display-serif" style="color: var(--accent)">durer.</span></h2>
+            <p>Une équipe locale engagée pour un quotidien plus simple et une relation de confiance.</p>
           </div>
-          <button class="slider-btn" id="nextTestimonial" aria-label="Suivant">
-            ›
-          </button>
+          <div class="grid grid-3">
+            <article class="card feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">🤝</div>
+              <h3>Interlocuteur dédié</h3>
+              <p>Un conseiller unique qui connaît votre dossier et vos besoins.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">🗓️</div>
+              <h3>Flexibilité totale</h3>
+              <p>Prestations ponctuelles ou régulières selon votre agenda.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">✨</div>
+              <h3>Qualité contrôlée</h3>
+              <p>Intervenants sélectionnés, formés et évalués régulièrement.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">💶</div>
+              <h3>Transparence des tarifs</h3>
+              <p>Prix clairs, devis détaillés et crédit d'impôt intégré.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">💛</div>
+              <h3>Accompagnement humain</h3>
+              <p>Écoute, bienveillance et suivi personnalisé sur la durée.</p>
+            </article>
+            <article class="card feature-card card-featured reveal">
+              <div class="feature-icon" aria-hidden="true">📍</div>
+              <h3>Ancrage local</h3>
+              <p>Une équipe de proximité à Vernouillet et dans les communes voisines.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="faq" class="section reveal faq">
-        <div class="section-header">
-          <h2>FAQ</h2>
-          <p>Vos questions les plus fréquentes.</p>
-        </div>
-        <div class="faq-list">
-          <details>
-            <summary>Comment fonctionne le crédit d’impôt ?</summary>
-            <p>
-              Vous bénéficiez de 50 % de crédit d’impôt sur les services à la
-              personne. Nous vous guidons pour simplifier les démarches.
-            </p>
-          </details>
-          <details>
-            <summary>Puis-je modifier mes créneaux ?</summary>
-            <p>
-              Oui, vous pouvez ajuster vos horaires facilement via votre
-              conseiller dédié.
-            </p>
-          </details>
-          <details>
-            <summary>Les intervenants sont-ils formés ?</summary>
-            <p>
-              Nos intervenants sont sélectionnés et suivis régulièrement pour
-              garantir une qualité constante.
-            </p>
-          </details>
-          <details>
-            <summary>Que se passe-t-il après ma demande ?</summary>
-            <p>
-              Nous vous recontactons sous 24h ouvrées pour affiner le besoin et
-              planifier une proposition personnalisée.
-            </p>
-          </details>
+      <!-- Services -->
+      <section id="services" class="section">
+        <div class="container-x">
+          <div class="section-header reveal">
+            <p class="eyebrow">Nos services</p>
+            <h2>Pour la maison, la famille <span class="display-serif" style="color: var(--accent)">et le soutien.</span></h2>
+            <p>Des prestations complètes, avec 50 % de crédit d'impôt sur l'ensemble.</p>
+          </div>
+
+          <div class="filters" role="tablist" aria-label="Filtrer les services">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="maison">Maison</button>
+            <button class="filter-btn" data-filter="jardin">Jardin</button>
+            <button class="filter-btn" data-filter="famille">Famille</button>
+            <button class="filter-btn" data-filter="soutien">Soutien</button>
+          </div>
+
+          <div class="services-grid">
+            <article class="card service-card reveal" data-category="maison">
+              <div class="service-top">
+                <div class="icon" aria-hidden="true">🧼</div>
+                <span class="tax-tag">−50 % impôt</span>
+              </div>
+              <h3>Entretien de la maison</h3>
+              <p>Ménage, rangement, entretien des surfaces et textiles.</p>
+              <div class="price">À partir de 26&nbsp;€ <small>/ heure</small></div>
+            </article>
+            <article class="card service-card reveal" data-category="jardin">
+              <div class="service-top">
+                <div class="icon" aria-hidden="true">🌿</div>
+                <span class="tax-tag">−50 % impôt</span>
+              </div>
+              <h3>Jardinage</h3>
+              <p>Tonte, taille, entretien des extérieurs et plantations.</p>
+              <div class="price">À partir de 28&nbsp;€ <small>/ heure</small></div>
+            </article>
+            <article class="card service-card reveal" data-category="maison">
+              <div class="service-top">
+                <div class="icon" aria-hidden="true">🔧</div>
+                <span class="tax-tag">−50 % impôt</span>
+              </div>
+              <h3>Petit bricolage</h3>
+              <p>Montage, petites réparations et ajustements du quotidien.</p>
+              <div class="price">À partir de 30&nbsp;€ <small>/ heure</small></div>
+            </article>
+            <article class="card service-card reveal" data-category="famille">
+              <div class="service-top">
+                <div class="icon" aria-hidden="true">🧒</div>
+                <span class="tax-tag">−50 % impôt</span>
+              </div>
+              <h3>Garde d'enfants (3+ ans)</h3>
+              <p>Sorties d'école, activités, repas et routines du soir.</p>
+              <div class="price">À partir de 32&nbsp;€ <small>/ heure</small></div>
+            </article>
+            <article class="card service-card reveal" data-category="soutien">
+              <div class="service-top">
+                <div class="icon" aria-hidden="true">📚</div>
+                <span class="tax-tag">−50 % impôt</span>
+              </div>
+              <h3>Soutien scolaire</h3>
+              <p>Accompagnement pédagogique et aide aux devoirs.</p>
+              <div class="price">À partir de 34&nbsp;€ <small>/ heure</small></div>
+            </article>
+            <article class="card service-card reveal" data-category="maison">
+              <div class="service-top">
+                <div class="icon" aria-hidden="true">🛒</div>
+                <span class="tax-tag">−50 % impôt</span>
+              </div>
+              <h3>Courses &amp; repas</h3>
+              <p>Aide aux courses, préparation de repas simples et équilibrés.</p>
+              <div class="price">À partir de 24&nbsp;€ <small>/ heure</small></div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="section reveal contact">
-        <div class="section-header">
-          <h2>Contact & devis gratuit</h2>
-          <p>Parlons de vos besoins, nous répondons rapidement.</p>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-left">
-          <div class="contact-info card">
-              <h3>Coordonnées</h3>
-              <p>📍 7 avenue Augustin Hottot, 78540 Vernouillet</p>
-            <p>📞 07 75 70 93 35</p>
-            <p>
-              ✉️
-              <a href="mailto:contact@présenceplus.fr"
-                >contact@présenceplus.fr</a
-              >
-            </p>
-            <div class="contact-cta">
-              <a
-                class="btn secondary"
-                href="https://wa.me/33775709335"
-                target="_blank"
-                rel="noopener"
-                >WhatsApp</a
-              >
-              <a class="btn ghost" href="mailto:contact@présenceplus.fr"
-                >Envoyer un mail</a
-              >
+      <!-- Fonctionnement -->
+      <section id="fonctionnement" class="section">
+        <div class="container-x">
+          <div class="section-header reveal">
+            <p class="eyebrow">Notre fonctionnement</p>
+            <h2>Un parcours simple, <span class="display-serif" style="color: var(--accent)">clair et sur mesure.</span></h2>
+          </div>
+          <div class="process">
+            <div class="process-step">
+              <div class="card">
+                <span class="step-number">1</span>
+                <div class="step-body">
+                  <h3>Échange</h3>
+                  <p>Analyse des besoins et conseils personnalisés, par téléphone ou en visite.</p>
+                </div>
+              </div>
             </div>
-              <h4>Zone d’intervention</h4>
-              <p>
-                Vernouillet, Verneuil-sur-Seine, Triel-sur-Seine, Médan, Les
-                Mureaux
+            <div class="process-step">
+              <div class="card">
+                <span class="step-number">2</span>
+                <div class="step-body">
+                  <h3>Proposition</h3>
+                  <p>Un devis clair, détaillé, avec le crédit d'impôt de 50 % déjà intégré.</p>
+                </div>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="card">
+                <span class="step-number">3</span>
+                <div class="step-body">
+                  <h3>Intervention</h3>
+                  <p>Une prestation ponctuelle ou régulière, suivie par votre conseiller dédié.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Simulateur -->
+      <section id="simulateur" class="section">
+        <div class="container-x">
+          <div class="section-header reveal">
+            <p class="eyebrow">Simulateur de budget</p>
+            <h2>Une estimation <span class="display-serif" style="color: var(--accent)">rapide et transparente.</span></h2>
+          </div>
+          <div class="simulator-grid">
+            <form id="simulatorForm" class="card simulator-form reveal">
+              <label class="form-label">
+                Service
+                <select name="service" id="simService" class="field" required>
+                  <option value="entretien">Entretien de la maison</option>
+                  <option value="jardinage">Jardinage</option>
+                  <option value="bricolage">Petit bricolage</option>
+                  <option value="garde">Garde d'enfants</option>
+                  <option value="soutien">Soutien scolaire</option>
+                  <option value="courses">Courses &amp; repas</option>
+                </select>
+              </label>
+              <label class="form-label">
+                Nombre d'heures / mois
+                <input
+                  type="number"
+                  id="simHours"
+                  class="field"
+                  min="1"
+                  max="200"
+                  value="10"
+                  required
+                />
+              </label>
+              <label class="form-label">
+                Fréquence
+                <select name="frequency" id="simFrequency" class="field">
+                  <option value="ponctuelle">Ponctuelle</option>
+                  <option value="reguliere">Régulière</option>
+                </select>
+              </label>
+              <button class="btn btn-accent" type="submit" data-magnetic>
+                <span>Recevoir un devis</span>
+              </button>
+              <p class="hint">
+                Estimation indicative. Un devis personnalisé est envoyé sous 24h.
+              </p>
+            </form>
+
+            <div class="card summary-card reveal">
+              <span class="glow glow-accent" aria-hidden="true"></span>
+              <h3>Estimation</h3>
+              <div class="summary-line">
+                <span>Coût brut estimé</span>
+                <strong id="simBrut">—</strong>
+              </div>
+              <div class="summary-line">
+                <span>Crédit d'impôt (50 %)</span>
+                <strong id="simCredit">—</strong>
+              </div>
+              <div class="summary-line total">
+                <span>Coût réel</span>
+                <strong id="simNet">—</strong>
+              </div>
+              <p class="note">
+                Nous vous rappelons pour affiner les besoins et valider les
+                disponibilités.
               </p>
             </div>
-            <div class="contact-highlights card">
-              <h3>Nos engagements</h3>
-              <ul>
-                <li>Réponse sous 24h ouvrées</li>
-                <li>Intervenants vérifiés</li>
-                <li>Crédit d'impôt 50 % intégré</li>
-                <li>Suivi personnalisé et humain</li>
-              </ul>
-            </div>
           </div>
-          <div class="contact-right">
-            <form id="contactForm" class="card">
-              <div class="field-row">
-                <label>
-                  Nom
-                  <input type="text" name="lastName" required />
-                </label>
-                <label>
-                  Prénom
-                  <input type="text" name="firstName" required />
-                </label>
+        </div>
+      </section>
+
+      <!-- Avis -->
+      <section id="avis" class="section testimonials">
+        <div class="container-x">
+          <div class="section-header reveal">
+            <p class="eyebrow">Avis clients</p>
+            <h2>Des familles locales <span class="display-serif" style="color: var(--accent)">qui nous font confiance.</span></h2>
+          </div>
+          <div class="card testimonial-slider reveal">
+            <button class="slider-btn" id="prevTestimonial" aria-label="Témoignage précédent">‹</button>
+            <div class="testimonial-content">
+              <p class="testimonial-quote" id="testimonialText"></p>
+              <span class="testimonial-author" id="testimonialAuthor"></span>
+            </div>
+            <button class="slider-btn" id="nextTestimonial" aria-label="Témoignage suivant">›</button>
+          </div>
+          <div class="testimonial-dots" id="testimonialDots" role="tablist" aria-label="Choisir un témoignage"></div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section faq">
+        <div class="container-x">
+          <div class="section-header reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2>Vos questions <span class="display-serif" style="color: var(--accent)">les plus fréquentes.</span></h2>
+          </div>
+          <div class="faq-list">
+            <details class="reveal">
+              <summary>Comment fonctionne le crédit d'impôt ?</summary>
+              <p>
+                Vous bénéficiez de 50 % de crédit d'impôt sur les services à la
+                personne. Nous vous guidons pour simplifier les démarches.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>Puis-je modifier mes créneaux ?</summary>
+              <p>
+                Oui, vous pouvez ajuster vos horaires facilement via votre
+                conseiller dédié.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>Les intervenants sont-ils formés ?</summary>
+              <p>
+                Nos intervenants sont sélectionnés et suivis régulièrement pour
+                garantir une qualité constante.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>Que se passe-t-il après ma demande ?</summary>
+              <p>
+                Nous vous recontactons sous 24h ouvrées pour affiner le besoin et
+                planifier une proposition personnalisée.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container-x">
+          <div class="section-header reveal">
+            <p class="eyebrow">Contact &amp; devis gratuit</p>
+            <h2>Parlons de vos besoins, <span class="display-serif" style="color: var(--accent)">nous répondons vite.</span></h2>
+          </div>
+
+          <div class="contact-grid">
+            <aside class="contact-aside">
+              <div class="card reveal">
+                <h3>Coordonnées</h3>
+                <ul class="contact-info-list">
+                  <li><span class="ic" aria-hidden="true">📍</span> 7 avenue Augustin Hottot, 78540 Vernouillet</li>
+                  <li><span class="ic" aria-hidden="true">📞</span> <a href="tel:+33630146306">06 30 14 63 06</a></li>
+                  <li><span class="ic" aria-hidden="true">✉️</span> <a href="mailto:contact@présenceplus.fr">contact@présenceplus.fr</a></li>
+                </ul>
+                <div class="contact-cta">
+                  <a class="btn btn-accent btn-sm" href="https://wa.me/33630146306" target="_blank" rel="noopener">
+                    <span>WhatsApp</span>
+                  </a>
+                  <a class="btn btn-ghost btn-sm" href="mailto:contact@présenceplus.fr">
+                    <span>Envoyer un mail</span>
+                  </a>
+                </div>
+                <h4 style="margin-top: 1.75rem">Zone d'intervention</h4>
+                <p class="zone-tag">
+                  Vernouillet, Verneuil-sur-Seine, Triel-sur-Seine, Médan, Les Mureaux.
+                </p>
               </div>
-              <div class="field-row">
-                <label>
-                  Email
-                  <input type="email" name="email" required />
-                </label>
-                <label>
-                  Téléphone
-                  <input type="tel" name="phone" required />
-                </label>
+
+              <div class="card reveal">
+                <h3>Nos engagements</h3>
+                <ul class="commit-list">
+                  <li><span class="ic" aria-hidden="true">✓</span> Réponse sous 24h ouvrées</li>
+                  <li><span class="ic" aria-hidden="true">✓</span> Intervenants vérifiés</li>
+                  <li><span class="ic" aria-hidden="true">✓</span> Crédit d'impôt 50 % intégré</li>
+                  <li><span class="ic" aria-hidden="true">✓</span> Suivi personnalisé et humain</li>
+                </ul>
               </div>
-              <label>
-                Service souhaité
-                <select name="service">
-                  <option>Entretien de la maison</option>
-                  <option>Jardinage</option>
-                  <option>Petit bricolage</option>
-                  <option>Garde d'enfants</option>
-                  <option>Soutien scolaire</option>
-                  <option>Courses & repas</option>
-                </select>
-              </label>
-              <label>
-                Fréquence
-                <select name="frequency">
-                  <option>Ponctuelle</option>
-                  <option>Régulière</option>
-                </select>
-              </label>
-              <fieldset class="slots">
-                <legend>Créneaux préférés</legend>
-                <label><input type="checkbox" name="slots" value="Matin" /> Matin</label>
-                <label
-                  ><input type="checkbox" name="slots" value="Après-midi" />
-                  Après-midi</label
-                >
-                <label><input type="checkbox" name="slots" value="Soir" /> Soir</label>
-                <label
-                  ><input type="checkbox" name="slots" value="Week-end" />
-                  Week-end</label
-                >
-              </fieldset>
-              <label>
-                Message
-                <textarea name="message" rows="4"></textarea>
-              </label>
-              <div class="form-actions">
-                <button class="btn primary" type="submit">
-                  Générer le récapitulatif
+            </aside>
+
+            <div class="reveal">
+              <form id="contactForm" class="card contact-form">
+                <div class="field-row">
+                  <label class="form-label">
+                    Nom
+                    <input type="text" name="lastName" class="field" required />
+                  </label>
+                  <label class="form-label">
+                    Prénom
+                    <input type="text" name="firstName" class="field" required />
+                  </label>
+                </div>
+                <div class="field-row">
+                  <label class="form-label">
+                    Email
+                    <input type="email" name="email" class="field" required />
+                  </label>
+                  <label class="form-label">
+                    Téléphone
+                    <input type="tel" name="phone" class="field" required />
+                  </label>
+                </div>
+                <div class="field-row">
+                  <label class="form-label">
+                    Service souhaité
+                    <select name="service" class="field">
+                      <option>Entretien de la maison</option>
+                      <option>Jardinage</option>
+                      <option>Petit bricolage</option>
+                      <option>Garde d'enfants</option>
+                      <option>Soutien scolaire</option>
+                      <option>Courses &amp; repas</option>
+                    </select>
+                  </label>
+                  <label class="form-label">
+                    Fréquence
+                    <select name="frequency" class="field">
+                      <option>Ponctuelle</option>
+                      <option>Régulière</option>
+                    </select>
+                  </label>
+                </div>
+
+                <fieldset class="choice-group">
+                  <legend>Créneaux préférés</legend>
+                  <div class="chips">
+                    <label class="chip"><input type="checkbox" name="slots" value="Matin" /><span>Matin</span></label>
+                    <label class="chip"><input type="checkbox" name="slots" value="Après-midi" /><span>Après-midi</span></label>
+                    <label class="chip"><input type="checkbox" name="slots" value="Soir" /><span>Soir</span></label>
+                    <label class="chip"><input type="checkbox" name="slots" value="Week-end" /><span>Week-end</span></label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="choice-group">
+                  <legend>Jours préférés</legend>
+                  <div class="chips">
+                    <label class="chip"><input type="checkbox" name="days" value="Lundi" /><span>Lundi</span></label>
+                    <label class="chip"><input type="checkbox" name="days" value="Mardi" /><span>Mardi</span></label>
+                    <label class="chip"><input type="checkbox" name="days" value="Mercredi" /><span>Mercredi</span></label>
+                    <label class="chip"><input type="checkbox" name="days" value="Jeudi" /><span>Jeudi</span></label>
+                    <label class="chip"><input type="checkbox" name="days" value="Vendredi" /><span>Vendredi</span></label>
+                    <label class="chip"><input type="checkbox" name="days" value="Samedi" /><span>Samedi</span></label>
+                    <label class="chip"><input type="checkbox" name="days" value="Dimanche" /><span>Dimanche</span></label>
+                  </div>
+                </fieldset>
+
+                <label class="form-label">
+                  Message
+                  <textarea name="message" class="field" rows="4"></textarea>
+                </label>
+
+                <button class="btn btn-accent" type="submit" data-magnetic>
+                  <span>Générer le récapitulatif</span>
                 </button>
-              </div>
-              <p class="hint">Données conservées localement (localStorage).</p>
-            </form>
-            <div class="summary-card card">
-              <div class="summary-header">
-                <h3>Récapitulatif instantané</h3>
-                <button class="btn ghost" type="button" id="copySummary">
-                  Copier le récapitulatif
-                </button>
-              </div>
-              <div class="summary-box" id="contactSummary">
-                Votre récapitulatif s'affichera ici.
-              </div>
+
+                <div class="contact-recap">
+                  <div class="recap-header">
+                    <h3>Récapitulatif instantané</h3>
+                    <button class="btn btn-ghost btn-sm" type="button" id="copySummary">
+                      <span>Copier</span>
+                    </button>
+                  </div>
+                  <div class="summary-box" id="contactSummary">
+                    Votre récapitulatif s'affichera ici.
+                  </div>
+                </div>
+                <p class="hint">Données conservées localement (localStorage), jamais envoyées.</p>
+              </form>
             </div>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
-      <div class="footer-content">
-        <div>
-          <div class="logo footer-logo">
-            <img src="assets/logo.png" alt="Logo PrésencePlus" />
-            <span>PrésencePlus</span>
+      <span class="glow glow-accent" aria-hidden="true"></span>
+      <div class="container-x">
+        <div class="footer-content">
+          <div>
+            <div class="logo footer-logo">
+              <img src="assets/logo.png" alt="" aria-hidden="true" width="44" height="44" />
+              <span class="logo-text"><span class="logo-name">Présence</span><span class="logo-accent">Plus</span></span>
+            </div>
+            <p>Services d'aide à domicile à Vernouillet &amp; alentours, avec un accompagnement humain et 50 % de crédit d'impôt.</p>
           </div>
-          <p>Services d'aide à domicile à Vernouillet & alentours.</p>
+          <div>
+            <h4>Liens rapides</h4>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#fonctionnement">Fonctionnement</a></li>
+              <li><a href="#simulateur">Simulateur</a></li>
+              <li><a href="#avis">Avis</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Informations</h4>
+            <ul>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="tel:+33630146306">06 30 14 63 06</a></li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h4>Liens rapides</h4>
-          <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#simulateur">Simulateur</a></li>
-            <li><a href="#avis">Avis</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Informations</h4>
-          <ul>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">Politique de confidentialité</a></li>
-          </ul>
-        </div>
+        <p class="footer-bottom">© 2026 PrésencePlus — Tous droits réservés.</p>
       </div>
-      <p class="footer-bottom">© 2026 PrésencePlus</p>
     </footer>
 
     <button id="backToTop" aria-label="Retour en haut">↑</button>
 
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
